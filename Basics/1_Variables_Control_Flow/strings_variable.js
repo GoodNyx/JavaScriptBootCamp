@@ -204,3 +204,35 @@ console.log(
 console.log(`Item price ${itemPrice} and quantity order is ${3}.`);
 console.log('');
 console.log('Thank you for your purchase.');
+
+// Create firstName and lastName. Build a full name, then display it in uppercase.
+let f_Name = 'naomi prince';
+let l_Name = 'okereke';
+const full_Name = f_Name + ' ' + l_Name;
+console.log('');
+console.log(`Your fullname is ${full_Name.trim().toUpperCase()}.`);
+console.log('');
+// Create a username with accidental spaces and clean it with trim().
+
+// Create a sentence and check whether it includes a chosen keyword.
+
+let sentencee =
+  'The old oak tree stood like a silent guardian at the edge of the misty meadow, its branches reaching out to catch the first light of dawn.';
+let sentenceChecker = sentencee.includes('oak');
+console.log(` Is the letter oak in the sentence ? ${sentenceChecker}`);
+console.log('');
+
+// Create a "daily learning report" containing
+// learner name, topic, hours studied, and status.
+console.log('');
+console.log('========== Daily Learning Report ==========  ');
+let learnerName = 'Goodnews Nwankpa';
+let topic = 'JavaScript: Strings and Variables';
+let studyHours = 2;
+let status = 'In-Progress';
+
+console.log(`Student Name: ${learnerName.trim().toUpperCase()}`);
+console.log(`Topic: ${topic.trim().toUpperCase()}`);
+console.log(`Learning Hour: ${studyHours}`);
+console.log(`Learning Status: ${status.trim().toUpperCase()}`);
+console.log('==========   **********   ==========  ');
