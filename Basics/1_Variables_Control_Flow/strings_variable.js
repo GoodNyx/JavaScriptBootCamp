@@ -156,3 +156,37 @@ console.log(
 );
 console.log(sentenceSlice.toLowerCase());
 console.log(sentenceSlice.toUpperCase());
+
+/*
+Level 3 — Mixed Challenge
+21.	Create variables for studentName, course, academy, and duration. Build one complete introduction sentence.
+22.	Create itemName, itemPrice, and quantity. Build a sentence describing the purchase.
+23.	Create firstName and lastName. Build a full name, then display it in uppercase.
+24.	Create a username with accidental spaces and clean it with trim().
+25.	Create a sentence and check whether it includes a chosen keyword.
+26.	Create a welcome message using at least three variables and a template literal.
+27.	Create a profile with name, age, country, and skill. Print a two-line introduction.
+28.	Create a product card data set using variables: name, category, price, and availability.
+29.	Create a student record using variables and display it as a readable sentence.
+30.	Create a "daily learning report" containing learner name, topic, hours studied, and status.
+*/
+
+//Create variables for studentName, course, academy,
+// and duration. Build one complete introduction sentence.
+
+let studentNamee = 'nwankpa goodnews ikechukwu';
+let courseNamee = 'javascript';
+let academy = "g'news academy";
+let duration = 6;
+
+console.log(`Welcome, ${studentNamee.trim().toUpperCase()}.`);
+console.log(
+  `You are currently learning ${courseNamee.trim().toUpperCase()} at,`,
+);
+console.log(
+  `${academy.trim().toUpperCase()} for the period of ${duration} months.`,
+);
+console.log(`And the length of your name is: ${studentNamee.length}`);
+console.log(`Is the letter g in your name? ${studentNamee.includes('g')}`);
+console.log(`Is the letter G in your name? ${studentNamee.includes('G')}`);
+console.log(`Is the number 0 in your name? ${studentNamee.includes('0')}`);
