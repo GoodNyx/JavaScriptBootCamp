@@ -74,3 +74,85 @@ console.log(`Product Name: ${productName}.`);
 console.log(`Product Price: ${price}.`);
 console.log(`Product Quantity: ${quantity}.`);
 console.log('====================================');
+
+/*
+Level 2 — String Practice
+11.	Store "JavaScript" in a variable and print its length.
+12.	Store your full name and convert it to uppercase.
+13.	Store your full name and convert it to lowercase.
+14.	Create a string with spaces before and after it. Use trim() to clean it.
+15.	Check whether "JavaScript" contains the word "Script" using includes().
+16.	Create a sentence and use slice() to extract part of it.
+17.	Create firstName and lastName, then combine them into a fullName using +.
+18.	Repeat the previous task using a template literal.
+19.	Create a courseName variable and produce: "I am learning JavaScript."
+20.	Create a city variable and produce: "I live in Lagos."
+*/
+
+//	Store "JavaScript" in a variable and print its length.
+
+let courseName1 = 'Javascript';
+const courseNameLength = courseName1.length; // This line of code gets the length of a string
+console.log(`The length of the word ${courseName1} is : ${courseNameLength}.`);
+
+//Store your full name and convert it to uppercase.
+
+let fullName = 'nwankpa ikechkwu goodnews';
+const fullNameLength = fullName.length;
+//This line of code convert the fullname into uppercase
+const fullNameUpper = fullName.toUpperCase();
+console.log(`The length of your fullname is: ${fullNameLength}`);
+console.log(`Your fullname converted to uppercase is: ${fullNameUpper}.`);
+
+// Store your full name and convert it to lowercase.
+let fullName1 = 'orson benaiah chinonso nwankpa';
+//This line of code gets the length of the fullname
+const fullName1Length = fullName1.length;
+//This line of code convert the fullname to uppercase
+const fullName1Upper = fullName1.toUpperCase();
+// This line of code convert the fullanme to lowercase
+const fullName1Lower = fullName1.toLowerCase();
+console.log('');
+console.log('====== Personal Details ======');
+console.log(`Your fullname is: ${fullName1}`);
+console.log(`The length of your fullname is: ${fullName1Length}`);
+console.log(`Your fullname in uppercase is: ${fullName1Upper}.`);
+console.log(`Your fullname in lowercase is: ${fullName1Lower}.`);
+console.log('================================');
+
+// 	Create a string with spaces before and after it. Use trim() to clean it.
+
+let lang = '   Javascript Learning Path  ';
+const langTrim = lang.trim();
+// printing the string before using trim
+console.log(lang);
+console.log(`The length of the string before trimming is: ${lang.length}.`);
+
+// printing the string after using trim
+console.log(langTrim);
+console.log(`The length of the string after trimming is: ${langTrim.length}.`);
+
+//Check whether "JavaScript" contains the word "Script" using includes().
+let courseChecker = 'JavaScript';
+courseCheckerIncludes = courseChecker.includes('Script');
+console.log(`Is the word Script in JavaScript ? ${courseCheckerIncludes}`);
+
+let name1 = 'Goodnews';
+const nameChecker = name1.includes('y');
+console.log(`Is the word y in Goodnews ? ${nameChecker}`);
+
+//Create a sentence and use slice() to extract part of it.
+let sentence = 'Javascript is awesome and beginner-friendly';
+const sentenceSlice = sentence.slice(0, 10);
+//Slicing refers to extracting a portion of an array
+// or a string without modifying the original data
+console.log(`This is the original sentence: ${sentence}.`);
+console.log(
+  `This is the slice sentence from the original sentence: ${sentenceSlice}.`,
+);
+console.log(`This is the length of the original sentence: ${sentence.length}`);
+console.log(
+  `This is the length of the slice sentence: ${sentenceSlice.length}`,
+);
+console.log(sentenceSlice.toLowerCase());
+console.log(sentenceSlice.toUpperCase());
