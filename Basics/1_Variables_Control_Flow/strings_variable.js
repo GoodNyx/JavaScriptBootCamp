@@ -190,3 +190,17 @@ console.log(`And the length of your name is: ${studentNamee.length}`);
 console.log(`Is the letter g in your name? ${studentNamee.includes('g')}`);
 console.log(`Is the letter G in your name? ${studentNamee.includes('G')}`);
 console.log(`Is the number 0 in your name? ${studentNamee.includes('0')}`);
+
+// Create itemName, itemPrice, and quantity.
+// Build a sentence describing the purchase.
+let buyerName = 'Jason Ekenechukwu Nwankpa';
+let itemName = 'Samsung Galaxy Z ';
+let itemPrice = ' $1,705.05';
+let itemQty = 3;
+console.log('---------Customer Receipt------------');
+console.log(
+  `Hi, ${buyerName.trim().toUpperCase()} your ordered item ${itemName.trim().toUpperCase().slice(0, 14)} was received.`,
+);
+console.log(`Item price ${itemPrice} and quantity order is ${3}.`);
+console.log('');
+console.log('Thank you for your purchase.');
