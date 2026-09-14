@@ -236,3 +236,95 @@ console.log(`Topic: ${topic.trim().toUpperCase()}`);
 console.log(`Learning Hour: ${studyHours}`);
 console.log(`Learning Status: ${status.trim().toUpperCase()}`);
 console.log('==========   **********   ==========  ');
+
+// PROJECTS
+/*
+Project 1 — Student Introduction Generator
+Build a small JavaScript program that creates a student's introduction using variables and strings.
+Requirements
+•	Create variables: studentName, age, country, course, and academy.
+•	Use const where a value will not change.
+•	Create an introduction using a template literal.
+•	Print the introduction to the console.
+•	Create a second message showing the student's course and academy.
+•	Convert the student's name to uppercase in one output.
+•	Display the length of the student's name.
+
+*/
+let student_Name = 'Jason Nwankpa';
+let student_Age = 24;
+let Student_Country = 'Canada';
+let student_Course = 'Javascript';
+let student_Academy = "G'news Academy";
+console.log('');
+console.log('====== Student Introduction Generator ======');
+console.log(
+  `Hello, my name is ${student_Name.trim().toUpperCase()}. Am ${student_Age} years old and i live in ${Student_Country}.`,
+);
+console.log(`Am currently learning ${student_Course} at ${student_Academy}.`);
+console.log(`My name has ${student_Name.length} characters.`);
+
+/*
+Project 2 — Simple Student Profile
+Build a student profile generator. This project combines several variables and string operations.
+Requirements
+•	Create variables for firstName, lastName, course, level, city, and learningGoal.
+•	Build fullName from firstName and lastName.
+•	Create a profile sentence with a template literal.
+•	Display fullName in uppercase.
+•	Display fullName in lowercase.
+•	Display the number of characters in fullName.
+•	Check whether the learningGoal contains the word 'JavaScript'.
+•	Create a short welcome message for the student.
+*/
+
+let first_Name = 'Orson';
+let last_Name = 'Jason';
+let ful_Name = first_Name + ' ' + last_Name;
+let course = 'Javascript';
+let level = 'Beginner';
+let citty = 'South Australia';
+let learningGoal = 'Become a JavaScript frontend developer';
+console.log('');
+console.log('====== Student Profile Generatorr ======');
+console.log(`Student: ${ful_Name.trim().toUpperCase()}`);
+console.log(`Course: ${course.trim().toUpperCase()}`);
+console.log(`Level: ${level.trim().toUpperCase()}`);
+console.log(`Location: ${citty.trim().toUpperCase()}`);
+console.log(`Goal: ${learningGoal}`);
+console.log(
+  `Is Javascript part of your learning goal? ${learningGoal.includes('JavaScript')}`,
+);
+
+/*Project 3 — Personal Profile Card Data
+Create a JavaScript program that stores information for a personal profile card.
+Your Requirements
+•	Store at least 7 pieces of information in variables.
+•	Include a name, location, skill, learning goal, course, experience level, and favorite technology.
+•	Create a readable profile summary.
+•	Use at least one template literal.
+•	Use at least two string methods.
+•	Print the final profile to the console.
+*/
+
+//Include a
+let name = 'bethel nwafor';
+let loction = 'new jersey';
+let skill = 'full stack enginner';
+let LearningGoal = 'to add logic, actions, and user interaction to websites';
+let courses = 'html css javascript react node';
+let experience_level = 'intermediate';
+let favorite_technology = 'Artificial Intelligence (AI)';
+
+console.log('');
+console.log("Welcome G'news Academy");
+console.log(
+  `Hello, my name is ${name.trim().toUpperCase()}. I live in ${loction} USA.`,
+);
+console.log(`Am a ${skill.trim().toUpperCase()} at G'news Academy.`);
+console.log(
+  `My learning goal is ${LearningGoal} and to achieve that am currently learning ${courses.trim().toUpperCase()}.`,
+);
+console.log(
+  `My experience level is ${experience_level} and my favorite technology is ${favorite_technology}.`,
+);
