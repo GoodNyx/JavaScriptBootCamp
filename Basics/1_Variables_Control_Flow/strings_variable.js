@@ -328,3 +328,21 @@ console.log(
 console.log(
   `My experience level is ${experience_level} and my favorite technology is ${favorite_technology}.`,
 );
+
+/*
+Project 2 — Mini Shopping Receipt ()
+Create a simple shopping receipt using only variables and strings. Do not use arrays, loops, functions, or DOM manipulation yet.
+Your Requirements
+•	Create variables for customerName, product1, price1, product2, price2, and storeName.
+•	Create a receipt message.
+•	Show the customer name and store name.
+•	Show both products and their prices.
+•	Create a total variable by adding the two prices.
+•	Create a final thank-you message.
+•	Use a template literal for the receipt.
+Extra Challenge
+•	Add a discount variable and calculate a new total.
+•	Add a deliveryFee variable.
+•	Create a finalAmount variable.
+•	Make the receipt easy to read with multiple lines.
+*/
