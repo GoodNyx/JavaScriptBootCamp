@@ -126,7 +126,7 @@ then subtract that amount from the original price.
 
 */
 let phonePrice = 749920;
-let discount = 0.1; //   10/100 = 0.1
+const discount = 0.1; //   10/100 = 0.1
 let originalPrice = phonePrice * discount;
 let discountPrice = phonePrice - originalPrice;
 console.log('');
@@ -135,3 +135,45 @@ console.log('Production: TECNO CAMON 50 ULTRA 8GB + 512GB (CN7c)');
 console.log(`The original price is:₦${phonePrice}`);
 console.log(`Discounted price is: ₦${discountPrice}`);
 console.log('');
+//Create score = 50 and increase it by 20.
+
+let score = 50;
+console.log(`Your score is: ${score} points.`);
+score += 20;
+console.log(`Your new score is: ${score} points.`);
+console.log('');
+//Calculate the average of five numbers.
+
+let a = 82;
+let b = 23;
+let c = 30;
+let d = 12;
+let e = 10;
+
+let sum_num = a + b + c + d + e;
+let avg = sum / 5;
+console.log(`The sum of the numbers is:${sum_num}`);
+console.log(`The average of the numbers is:${avg}`);
+
+// Determine whether 47 is even or odd using %.
+
+let num = 47;
+if (num % 2 === 0) {
+  console.log(`The number ${num} is even`);
+} else {
+  console.log(`The number ${num} is odd `);
+}
+console.log('');
+// A product costs ₦15,000. Add 7.5% tax.
+console.log('');
+let productName = 'Tecno Fridge';
+let productPrice = 15000;
+const tax = 0.075;
+let taxCalculation = productPrice * tax;
+let totalCost = productPrice + taxCalculation;
+console.log(`Product Name: ${productName}`);
+console.log(`Subtotal: ₦${productPrice}`);
+console.log(`VAT (7.5%) : ₦${taxCalculation}`);
+console.log(`Total: ₦${totalCost}`);
+console.log('');
+console.log('Thank you for your purchase.');
