@@ -177,3 +177,16 @@ console.log(`VAT (7.5%) : ₦${taxCalculation}`);
 console.log(`Total: ₦${totalCost}`);
 console.log('');
 console.log('Thank you for your purchase.');
+
+
+
+/*
+Calculate a student's percentage from total marks and marks obtained.
+To calculate a student's percentage, divide the marks obtained by the total marks,
+ and then multiply the result by 100.*/ 
+
+ let studentSocre = 420;
+ const totalMark = 500;
+ 
+const percentage = (studentSocre / totalMark) * 100;
+console.log(percentage);
