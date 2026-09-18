@@ -178,15 +178,103 @@ console.log(`Total: ₦${totalCost}`);
 console.log('');
 console.log('Thank you for your purchase.');
 
-
-
 /*
 Calculate a student's percentage from total marks and marks obtained.
 To calculate a student's percentage, divide the marks obtained by the total marks,
- and then multiply the result by 100.*/ 
+ and then multiply the result by 100.*/
 
- let studentSocre = 420;
- const totalMark = 500;
- 
+let studentSocre = 420;
+const totalMark = 500;
+
 const percentage = (studentSocre / totalMark) * 100;
-console.log(percentage);
+
+/*
+Project 1
+Create a simple shopping calculator.
+The customer should be able to purchase several products.
+Calculate:
+•	Product price 
+•	Quantity 
+•	Subtotal 
+•	Discount 
+•	Tax 
+•	Delivery fee 
+•	Final total 
+•	Amount paid 
+•	Change 
+
+
+*/
+console.log('');
+console.log('');
+console.log('🛒 Shopping Cart & Receipt');
+console.log('==============================');
+/*
+discount = price × discountRate / 100
+finalPrice = price - discount
+Tax = Amount × Tax Rate ÷ 100 
+const price = 100000;
+const taxRate = 7.5;
+const tax = price * taxRate / 100;
+console.log(tax);
+
+*/
+const productNamee = 'Laptop';
+const Price = 500000;
+const Qty = 1;
+const discountRate = 10;
+const taxRate = 7.5;
+const deliveryFee = 5000;
+
+/*
+Steps 1
+Clean the product name Remove unnecessary spaces and Change the product name to uppercase.
+*/
+const cleanProductName = productNamee.trim().toUpperCase();
+console.log(`ProductName: ${cleanProductName}`);
+console.log(`ProductQuality: ${Qty}`);
+
+/*
+Steps 2
+Calculate subtotal
+*/
+const subTotal = Qty * Price;
+console.log(`Price: ₦${subTotal}`);
+/*
+Step 3 — Calculate discount
+discount = subtotal × discountRate ÷ 100
+*/
+const discountt = subTotal * (discountRate / 100);
+console.log(`Discount (10%): ₦${discountt}`);
+/*
+Step 4 — Calculate price after discount
+*/
+const afterDiscount = subTotal - discountt;
+console.log(`Discounted Price: ₦${afterDiscount}`);
+
+/*
+Step 5 — Calculate tax
+Tax should be calculated after the discount.
+*/
+const Tax = afterDiscount * (taxRate / 100);
+console.log(`Tax: ₦${Tax}`);
+console.log(`Delivery: ₦${deliveryFee}`);
+
+/*
+Step 6 — Calculate final total
+
+*/
+const finalTotal = afterDiscount + Tax + deliveryFee;
+const finalRound = Math.round(finalTotal);
+console.log(`Total: ₦${finalRound}`);
+
+/*
+Step 7 — Calculate the change
+
+*/
+const change = subTotal - finalTotal;
+console.log(`Change: ₦${change}`);
+/*
+Step 8 — ound your results
+
+*/
