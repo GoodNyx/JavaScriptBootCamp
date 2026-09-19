@@ -207,8 +207,9 @@ Calculate:
 */
 console.log('');
 console.log('');
+console.log('========================================');
 console.log('🛒 Shopping Cart & Receipt');
-console.log('==============================');
+console.log('========================================');
 /*
 discount = price × discountRate / 100
 finalPrice = price - discount
@@ -274,7 +275,77 @@ Step 7 — Calculate the change
 */
 const change = subTotal - finalTotal;
 console.log(`Change: ₦${change}`);
+
 /*
-Step 8 — ound your results
+PROJECT 2 — Customer Information + Purchase
+
+Final output
+Your receipt should display something similar to:
+CUSTOMER: GOODNEWS NWANKPA
+EMAIL: goodnews@example.com
+PRODUCT: WIRELESS HEADPHONES
+SUBTOTAL: ₦170,000
+DISCOUNT: ...
+TAX: ...
+DELIVERY: ₦3,000
+FINAL TOTAL: ...
+AMOUNT PAID: ₦180,000
+CHANGE: ...
 
 */
+console.log('');
+console.log('========================================');
+console.log(' 📋 Customer Information + Purchase');
+console.log('========================================');
+const customerName = 'goodnews ikechukwu nwankpa';
+const customerEmail = 'GOODNEWS.NWANKPA@GMAIL.COM';
+const customerProduct = '  wireless headphones  ';
+const Pricee = 85000;
+const Qtty = 2;
+// 15% discount
+const subTotall = Pricee * 2;
+const discountOnPurchase = subTotall * (15 / 100);
+const finalDiscount = subTotall - discountOnPurchase;
+// console.log(discountOnPurchase);
+// console.log(finalDiscount);
+//Tax:7.5%
+
+const TaxDeduction = (subTotall * 7.5) / 100;
+const ItemDeliveryFee = 3000;
+/*Task 1 — Clean the customer name .Remove the spaces. Then convert it to uppercase.*/
+console.log(`Customer Name: ${customerName.trim().toUpperCase()}`);
+/*Task 2 — Clean the product Remove spaces and convert it to uppercase.
+ */
+console.log(`Product Name: ${customerProduct.trim().toUpperCase()}`);
+/*
+Task 3 — Convert the email
+Convert the email to lowercase.
+Expected:
+goodnews@example.com
+*/
+console.log(`Customer Email: ${customerEmail.trim().toLowerCase()}`);
+/*
+Task 4 — Check the email
+Use:
+.includes()
+Check whether the email contains:
+@
+For example:
+const hasAtSymbol = email.includes("@");
+*/
+const hasSymbol = customerEmail.includes('@');
+console.log(`Customer Email Has Symbol:${hasSymbol}`);
+/*
+Task 5 — Get part of the customer name
+Use:
+.slice()
+Try to extract the first few characters of the name.
+For example:
+const shortName = cleanCustomerName.slice(0, 5);
+*/
+const shortName = customerName.slice(0, 8);
+console.log(`Customer FirstName:${shortName.toUpperCase()}`);
+console.log(`SubTotal:  ₦${subTotall}`)
+console.log(finalDiscount);
+console.log(discountOnPurchase);
+console.log(TaxDeduction);
