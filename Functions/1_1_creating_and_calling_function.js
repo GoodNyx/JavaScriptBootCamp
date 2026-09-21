@@ -64,13 +64,39 @@ showProduct('Headset', 16000);
 showProduct('SamSung Tv', 1600000);
 console.log();
 
-function calculateSubtotal(item, price, qty, discount,subtotal) {
-  subtotal = price * qty;
-  console.log(`The name of item is: ${item}`);
-  console.log(`The price for the item is: ₦${price}`);
-  console.log(`The quantity  for the item is: ${qty}`);
-  console.log(`The Total is: ₦${subtotal}`);
+function calculateSubtotal(customername, item, price, qty) {
+  let discountRate = 0.1;
+  let vatRate = 0.075;
+  let delivery = 5000;
+  let customerOrder = price * qty;
+  let DiscountAmount = customerOrder * discountRate;
+
+  //Amount After Discount
+  let amountAfterDiscount = customerOrder - DiscountAmount;
+
+  //Vat Calculation
+
+  let vatAmount = amountAfterDiscount * vatRate;
+  // Final amount for payment
+  let finalAmount = amountAfterDiscount + vatAmount + delivery;
+
+  console.log('========== Customer Order ==========');
+  console.log(`Customer Name: ${customername}`);
+  console.log(`Item Order: ${item}`);
+  console.log(`Item Price (₦): ₦${price}`);
+  console.log(`Quantity Order: ${qty}`);
+  console.log(`Total Amount(₦): ₦${customerOrder}`);
+  console.log(`Discount Rate (%): ${discountRate * 100}%`);
+  console.log(`Discount Amount (₦): ₦${DiscountAmount}`);
+  console.log(`Total Amount (₦): ₦${amountAfterDiscount}`);
+  console.log(`VAT Rate (%): ${vatRate * 100}%`);
+  console.log(`VAT Amount (₦): ₦${vatAmount}`);
+  console.log(`Delivery Amount (₦): ₦${delivery}`);
+  console.log(`Final Amount (₦) : ₦${finalAmount}`);
 }
-calculateSubtotal('Laptop', 250000, 3);
+
+calculateSubtotal('Goodnews', 'Laptop', 250000, 3);
 console.log();
-calculateSubtotal('Mouse', 7000, 32);
+calculateSubtotal('Malik', 'Mouse', 5000, 20);
+console.log();
+calculateSubtotal('Naomi', 'Human Hair', 250000, 5);
