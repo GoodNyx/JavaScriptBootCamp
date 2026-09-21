@@ -32,11 +32,7 @@ if (itemOrder < 30000) {
   console.log(`Final Amount: ₦${Math.round(finalAmount)}`);
 }
 
-
-
-
-
-// 
+//
 // /*
 //   🏪 Week 2 Capstone Project: Business Order Discount System
 
@@ -47,7 +43,7 @@ if (itemOrder < 30000) {
 
 //   VAT:
 //   - 7.5% VAT is applied AFTER the discount.
-  
+
 //   Calculation Order:
 //   Original Order
 //        ↓
@@ -86,9 +82,7 @@ if (customerOrder >= 50000) {
   let finalAmount = amountAfterDiscount + vatAmount;
 
   console.log(`Hello, ${customerName}`);
-  console.log(
-    `Congratulations! Your order qualifies for a 15% discount.`,
-  );
+  console.log(`Congratulations! Your order qualifies for a 15% discount.`);
 
   console.log('===========================================================');
   console.log('Payment Details');
@@ -102,10 +96,9 @@ if (customerOrder >= 50000) {
   console.log(`VAT Rate: ${vatRate * 100}%`);
   console.log(`VAT Amount: ₦${vatAmount}`);
   console.log(`Final Amount: ₦${finalAmount}`);
-
 } else if (customerOrder >= 30000) {
   // 10% discount
-  let discountRate = 0.10;
+  let discountRate = 0.1;
   let discountAmount = customerOrder * discountRate;
 
   // Amount after discount
@@ -118,9 +111,7 @@ if (customerOrder >= 50000) {
   let finalAmount = amountAfterDiscount + vatAmount;
 
   console.log(`Hello, ${customerName}`);
-  console.log(
-    `Congratulations! Your order qualifies for a 10% discount.`,
-  );
+  console.log(`Congratulations! Your order qualifies for a 10% discount.`);
 
   console.log('===========================================================');
   console.log('Payment Details');
@@ -134,7 +125,6 @@ if (customerOrder >= 50000) {
   console.log(`VAT Rate: ${vatRate * 100}%`);
   console.log(`VAT Amount: ₦${vatAmount}`);
   console.log(`Final Amount: ₦${finalAmount}`);
-
 } else {
   // No discount
   let discountRate = 0;
@@ -150,9 +140,7 @@ if (customerOrder >= 50000) {
   let finalAmount = amountAfterDiscount + vatAmount;
 
   console.log(`Hello, ${customerName}`);
-  console.log(
-    `Sorry! Your order does not qualify for a discount.`,
-  );
+  console.log(`Sorry! Your order does not qualify for a discount.`);
 
   console.log('===========================================================');
   console.log('Payment Details');
