@@ -64,7 +64,7 @@ showProduct('Headset', 16000);
 showProduct('SamSung Tv', 1600000);
 console.log();
 
-function calculateSubtotal(item, price, qty, subtotal) {
+function calculateSubtotal(item, price, qty, discount,subtotal) {
   subtotal = price * qty;
   console.log(`The name of item is: ${item}`);
   console.log(`The price for the item is: ₦${price}`);
