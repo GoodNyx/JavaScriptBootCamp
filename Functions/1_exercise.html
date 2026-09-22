@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kilometer Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body></body>
+  <script>
+    /*
+Write a program that asks the user to enter a distance in kilometers, and then converts that
+distance to miles. The conversion formula is as follows:
+miles = kilometer * 0.6214
+*/
+
+    let kiloMeterToMiles = function (kilometer) {
+      const NUM = 0.6214;
+      let miles = '';
+      miles = kilometer * NUM;
+      return miles;
+    };
+    let kiloMeterValue = Number(prompt('Enter number: '));
+
+    let finalDistanceInMiles = kiloMeterToMiles(kiloMeterValue);
+    // Display result
+    alert(`The distance is: ${finalDistanceInMiles} miles.`);
+    // console.log(
+    //   `The distance covered in ${kiloMeterValue} kilometers is: ${finalDistanceInMiles} miles.`,
+    // );
+  </script>
+</html>

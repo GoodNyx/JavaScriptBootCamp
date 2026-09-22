@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance</title>
+  </head>
+  <body></body>
+  <script>
+    /*
+Many financial experts advise that property owners should insure their homes or buildings
+for at least 80 percent of the amount it would cost to replace the structure. Write a program
+that asks the user to enter the replacement cost of a building and then displays the
+minimum amount of insurance he or she should buy for the property.*/
+
+    let insuredProperty = function (insuredAmount) {
+      const insurancePercentage = 0.8;
+      let minimiumAmount = insuredAmount * insurancePercentage;
+      return minimiumAmount;
+    };
+    let replacementCost = Number(
+      prompt('Enter the replacement cost of a building'),
+    );
+
+    let finalPayment = insuredProperty(replacementCost);
+    // Display results
+    alert(`Replacement Cost: ₦${replacementCost}`);
+
+    alert(`Insurance Percentage: 80%`);
+
+    alert(`Minimum Insurance Amount: ₦${finalPayment}`);
+  </script>
+</html>

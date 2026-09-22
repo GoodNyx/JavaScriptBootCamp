@@ -1,4 +1,8 @@
 /*
+A function is a group of statements that exist within a program for the
+purpose of performing a specific task.
+
+
 
 Functions are Code Blocks
 Functions are reusable code blocks designed to perform a particular task.
@@ -6,97 +10,62 @@ Functions are executed when they are called or invoked.
 Functions are fundamental in all programming languages.
 */
 
-function sayMyName() {
-  return 'Goodnews Ikechukwu Nwankpa';
-}
-//The function above does nothing yet.. we have to call the function or invoke it.
+// More about function
+// function - Input(argument) - Code - Output(return)
+let greetUser = function () {
+  console.log('Welcome User.');
+};
+greetUser();
 
-let myName = sayMyName();
-console.log(myName);
+let square = function (num) {
+  let result = num * num;
+  return result;
+};
+let number = 3;
+let resultValue = square(number);
+console.log(`The square of ${number} is:${resultValue}`);
 
-function orderRate(order, rate) {
-  return order * rate;
-}
-// Calling the function
-let Order = orderRate(40000, 0.1);
+let fahreintCelcius = function (F) {
+  let celcius = (F - 32) * (5 / 9);
+  return celcius;
+};
+let numFahreint = 20;
+let numFahreint1 = 25;
+let resultVal = fahreintCelcius(numFahreint);
+let resultVal1 = fahreintCelcius(numFahreint1);
 
-console.log(Order);
+console.log(`${numFahreint}°F is: ${resultVal}`);
+console.log(`${numFahreint1}°F is: ${resultVal1}`);
 
-/*
-Exercise 1 — Customer Greeting
-
-Create a function called: greetCustomer()
-It should receive a customer's name as a parameter and display: Welcome Goodnews!
-Test it with at least 3 different names.
-
-*/
-
-function greetCustomer(name) {
-  console.log(`Welcome ${name}!`);
-}
-
-//Testing with 3 Different Names
-greetCustomer('Ikechukwu');
-greetCustomer('John');
-greetCustomer('Mathew');
-console.log();
-function welcomeBuziness(name, companyName) {
-  console.log(`Welcome, ${name} to ${companyName}.`);
-}
-
-welcomeBuziness('Goodnews', "G'news Technologies");
-welcomeBuziness('Kayode', 'Taverna Hotel');
-welcomeBuziness('Naomi', 'Mikky Salon');
+//Exercises
 
 /*
-Create a function:showProduct()
-It should receive:
-product name
-price
+Write a program that asks the user to enter a distance in kilometers, and then converts that
+distance to miles. The conversion formula is as follows:
+miles = kilometer * 0.6214
 */
-console.log();
-function showProduct(productname, productprice) {
-  console.log(`${productname}: ₦${productprice}`);
-}
+//Note: Input(argument), Code (Perform Operation), Output (return)
+let distanceMiles = function (kilometer) {
+  //Input = kilometer
+  //Perform Operation
+  const NUM = 0.6214;
+  let miles = kilometer * NUM;
+  //Output
+  return miles;
+};
 
-showProduct('Laptop', 180000);
-showProduct('Headset', 16000);
-showProduct('SamSung Tv', 1600000);
-console.log();
 
-function calculateSubtotal(customername, item, price, qty) {
-  let discountRate = 0.1;
-  let vatRate = 0.075;
-  let delivery = 5000;
-  let customerOrder = price * qty;
-  let DiscountAmount = customerOrder * discountRate;
+// Ask the user for input
+let kilometerValue = Number(prompt('Enter distance in kilometers: '));
+//Calling the function
+let kilometerValue1 = 60;
+let kilometerValue2 = 120;
+let finalDistanceInMiles1 = distanceMiles(kilometerValue1);
+let finalDistanceInMiles2 = distanceMiles(kilometerValue2);
+console.log(
+  `The distance covered in ${kilometerValue1} kilometers is: ${finalDistanceInMiles1} miles.`,
+);
 
-  //Amount After Discount
-  let amountAfterDiscount = customerOrder - DiscountAmount;
-
-  //Vat Calculation
-
-  let vatAmount = amountAfterDiscount * vatRate;
-  // Final amount for payment
-  let finalAmount = amountAfterDiscount + vatAmount + delivery;
-
-  console.log('========== Customer Order ==========');
-  console.log(`Customer Name: ${customername}`);
-  console.log(`Item Order: ${item}`);
-  console.log(`Item Price (₦): ₦${price}`);
-  console.log(`Quantity Order: ${qty}`);
-  console.log(`Total Amount(₦): ₦${customerOrder}`);
-  console.log(`Discount Rate (%): ${discountRate * 100}%`);
-  console.log(`Discount Amount (₦): ₦${DiscountAmount}`);
-  console.log(`Total Amount (₦): ₦${amountAfterDiscount}`);
-  console.log(`VAT Rate (%): ${vatRate * 100}%`);
-  console.log(`VAT Amount (₦): ₦${vatAmount}`);
-  console.log(`Delivery Amount (₦): ₦${delivery}`);
-  console.log(`Final Amount (₦) : ₦${finalAmount}`);
-}
-
-calculateSubtotal('Goodnews', 'Laptop', 250000, 3);
-console.log();
-calculateSubtotal('Malik', 'Mouse', 5000, 20);
-console.log();
-calculateSubtotal('Naomi', 'Human Hair', 250000, 5);
+console.log(
+  `The distance covered in ${kilometerValue2} kilometers is: ${finalDistanceInMiles2} miles.`,
+);
